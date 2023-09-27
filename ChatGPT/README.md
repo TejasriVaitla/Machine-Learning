@@ -1,4 +1,4 @@
-# Customer Support System using Web Page
+# Customer Support System using ChatGPT
 
 ## Introduction
 This project aims to create a Customer Support System that utilizes web crawling, text embedding, and the OpenAI API to provide answers to questions based on webpage content. It includes two implementations: `Command Line Based` and `Web Based`.
