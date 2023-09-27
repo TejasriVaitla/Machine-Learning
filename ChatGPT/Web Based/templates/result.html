@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Question Result</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='result.css') }}">
+
+</head>
+<body>
+    <img src="{{ url_for('static', filename='ChatGPT.png') }}" class="icon" />
+    <h1>Answer</h1>
+    <p><strong>Question:</strong> {{ question }}</p>
+    <p><strong>Answer:</strong> {{ answer }}</p>
+    <br>
+    <a href="/">Ask Another Question</a>
+</body>
+</html>
