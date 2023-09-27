@@ -33,9 +33,9 @@ To run this project on an Ubuntu system, follow these steps:
 
 2. Install Python 3.10's virtual environment package, if not already installed:
 
-   ```bash
-   $ sudo apt install python3.10-venv
-   ```
+ ```bash
+  $ sudo apt install python3.10-venv
+  ```
 * Create a Python virtual environment named 'venv'
 ```bash
 $ python3 -m venv venv
@@ -48,6 +48,7 @@ $ . venv/bin/activate
 ```bash
 $ pip install -r requirements.txt
 ```
+
 * To crawl data from webpages, run:
 ```bash
 $ python3 crawl.py
@@ -64,4 +65,24 @@ $ python3 app.py
 ```bash
 $ deactivate
 ```
-   
+
+## Output
+
+* Command Line Based
+
+  ![image](https://github.com/TejasriVaitla/Machine-Learning/assets/128747986/3e0eea64-5afb-4caa-99eb-ef526251b477)
+
+* Web Based
+
+  ![image](https://github.com/TejasriVaitla/Machine-Learning/assets/128747986/cc1fbe67-2f99-445c-8d73-a9efe8bc7f69)
+
+  ![image](https://github.com/TejasriVaitla/Machine-Learning/assets/128747986/cb5f5d46-e766-42a4-98e5-6058fda58525)
+
+  ![image](https://github.com/TejasriVaitla/Machine-Learning/assets/128747986/e2beea85-aff7-4741-90b6-78aee85280eb)
+
+  ![image](https://github.com/TejasriVaitla/Machine-Learning/assets/128747986/1653864c-79d1-4d57-8612-9b8bf60bfe91)
+
+
+### Customer Support System Using ChatGPT (Google Slides)
+
+[Customer Support System(Slides)](https://docs.google.com/presentation/d/1owShXzGYxCsduLe9XTfHx8StQ7d0srAtT2oZMkLhd6s/edit?usp=sharing)
