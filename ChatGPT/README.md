@@ -25,6 +25,9 @@ The web-based implementation utilizes the Flask framework to offer a user-friend
 
 Step 1.1.1. Execute the complete code on Jupyter Notebook (`command_code.ipynb`) or Google Colab.
 
+<img src="https://github.com/TejasriVaitla/Machine-Learning/assets/128747986/99c64c00-b081-465a-a1b1-d08798603bf1" width="400px">
+
+
 ### Ubuntu Terminal Setup
 To run this project on an Ubuntu system, follow these steps:
 
