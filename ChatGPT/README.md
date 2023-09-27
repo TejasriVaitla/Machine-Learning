@@ -3,8 +3,6 @@
 ## Introduction
 This project is a Customer Support System that uses web crawling, text embedding, and the OpenAI API to answer questions about webpages' content. It includes two implementations: `Command Line Based` and `Web Based`.
 
-[Customer Support System (Google Slides)](https://docs.google.com/presentation/d/12nCGc0cTLNANdy5E32ED5QG6uSdT6HaiYG5wjZ0hu1w/edit?usp=sharing)
-
 ## Design
 The system is designed to perform the following steps:
 
