@@ -105,6 +105,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 ![image](https://github.com/TejasriVaitla/Machine-Learning/assets/128747986/56f80345-5421-42ee-8e97-554c7f5d95be)
 
-## Customer Support System (Flask and Nodejs)
 
-Google Slides
+### Customer Support System Using ChatGPT (Google Slides)
+
+[Customer Support System(Slides)](https://docs.google.com/presentation/d/1owShXzGYxCsduLe9XTfHx8StQ7d0srAtT2oZMkLhd6s/edit?usp=sharing)
