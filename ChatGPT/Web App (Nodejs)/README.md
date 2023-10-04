@@ -57,7 +57,7 @@ Install packages needed to run Python Scripts
 ```
 $ npm run install
 ```
-### 3. Update Package.json Scripts
+### Step 3: Update Package.json Scripts
 
 Update your `package.json` file to include the following scripts:
 
@@ -70,7 +70,7 @@ Update your `package.json` file to include the following scripts:
 ```
 
 These scripts are used to install Python dependencies, crawl a website, and create embeddings.
-### Step 3: Crawl Data and Embedding
+### Step 4: Crawl Data and Embedding
 
 I keep crawling data and embedding seperate from the main program to avoid TIMEOUT error and save cost on embedding.
 
