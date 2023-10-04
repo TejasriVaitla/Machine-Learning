@@ -96,3 +96,15 @@ $ npm run embedding
 $ npm run dev
 ```
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+## Result
+
+![image](https://github.com/TejasriVaitla/Machine-Learning/assets/128747986/311ebdd1-e1f2-4ae8-9dd6-a1b9000e3582)
+
+![image](https://github.com/TejasriVaitla/Machine-Learning/assets/128747986/677adf29-37ce-428d-aa46-2ea26e2448b2)
+
+![image](https://github.com/TejasriVaitla/Machine-Learning/assets/128747986/56f80345-5421-42ee-8e97-554c7f5d95be)
+
+## Customer Support System (Flask and Nodejs)
+
+Google Slides
