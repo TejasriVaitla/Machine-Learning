@@ -3,7 +3,7 @@ import openai
 import os
 from flask import Flask, render_template, request
 # Import products_description from products_data.py
-from products_data_french import products_data_french as products_data
+from products_data import products_data
 
 with open(".env") as env:
     for line in env:
@@ -28,78 +28,76 @@ def get_completion(prompt):
 
 # Step 1: Generate a Customer's Comment
 def generate_customer_comment(products_data):
-    prompt = f"""
-    Supposez que vous êtes un client d'une entreprise de produits électroniques.
-    Écrivez un commentaire de 100 mots seulement sur les produits, délimité par des triples backticks, dans leur propre langue. 
-    Produits : ```{products_data}```
+    prompt=f"""
+    Assume that you are a customer to an electronic product company.
+    Write a 100-word only comment about the products delimited by tripe backticks in its own language. 
+    Products: ```{products_data}```
     """
-    response = get_completion(prompt)
+    response=get_completion(prompt)
     return response
-
-
 
 # Step 2: Generate Email Subject
 def generate_email_subject(comment):
-    prompt = f"""
-    En supposant que vous fournissiez un support client pour une entreprise de produits électroniques.
-    Sur la base du commentaire du client délimité par des triples backticks, suggérez un objet d'e-mail court pour répondre au client. 
-    Commentaire : ```{comment}```
+    prompt=f"""
+    Asuming that you provide customer support for an electronic product company.
+    Based on the customer comment delimited in triple backticks, suggest a short email subject to respond to customer. 
+    Comment= ```{comment}```
     """
     response=get_completion(prompt)
     return response
 
 # Step 3: Generate Customer Comment Summary
 def summarize_comment(comment):
-    prompt = f"""
-    En supposant que vous fournissiez un support client pour une entreprise de produits électroniques.
-    Fournissez un résumé concis en 50 mots du commentaire du client suivant, délimité par des triples backticks. Commentaire : ```{comment}```
+    prompt=f"""
+    Asuming that you provide customer support for an electronic product company.
+    Provide a concise summary in 50 words of the following customer comment delimited in triple backticks. Comment: ```{comment}```
     """
     response=get_completion(prompt)
     return response
 
 def translate_summary_with_chatgpt(language, summary):
-    prompt = f"""
-    Traduisez le résumé suivant délimité par des triples backticks vers la langue délimitée par <>. 
-    Langue : ```{language}```   
-    Résumé : <{summary}>
+    prompt= f"""
+    Translate the following summary delimited by triple backticks to the language delimited by <>. 
+    Language:```{language}```   
+    Summary:<{summary}>
     """
     response=get_completion(prompt)
     return response
 
 # Step 4: Analyze Customer Comment Sentiment
 def analyze_sentiment(comment):
-    prompt = f"""
-    En supposant que vous fournissiez un support client pour une entreprise de produits électroniques.
-    Quel est le sentiment du commentaire délimité par des triples backticks ? Est-ce positif ou négatif ? 
-    Commentaire : ```{comment}```
+    prompt=f"""
+    Asuming that you provide customer support for an electronic product company.
+    What is the sentiment of the comment delimited in triple backticks. Is it positive or negative? 
+    Comment: ```{comment}```
     """
-    max_tokens = 10
-    response = get_completion(prompt)
+    max_tokens=10
+    response=get_completion(prompt)
     sentiment = response.lower()
-    if "positif" in sentiment:
-        return "positif"
-    elif "négatif" in sentiment:
-        return "négatif"
+    if "positive" in sentiment:
+        return "positive"
+    elif "negative" in sentiment:
+        return "negative"
     else:
-        return "neutre"
+        return "neutral"
 
 # Step 5: Generate Customer Email
-def generate_customer_email(summary, sentiment, email_subject, language):
-    if sentiment == "positif":
-        response_text = "Nous sommes ravis d'entendre vos commentaires positifs et apprécions vos paroles encourageantes. Votre satisfaction est notre priorité absolue !"
-    elif sentiment == "négatif":
-        response_text = "Nous sommes vraiment désolés d'apprendre votre expérience. Vos commentaires sont essentiels, et nous nous efforcerons de répondre à vos préoccupations."
+def generate_customer_email(summary, sentiment, email_subject,language):
+    if sentiment == "positive":
+        response_text = "We're thrilled to hear your feedback and appreciate your positive words. Your satisfaction is our top priority!"
+    elif sentiment == "negative":
+        response_text = "We're truly sorry to hear about your experience. Your feedback is crucial, and we'll strive to address your concerns."
     else:
-        response_text = "Merci pour vos commentaires ! Nous cherchons toujours à nous améliorer, et vos idées sont précieuses."
-    prompt = f"""
-    En supposant que vous fournissiez un support client pour une entreprise de produits électroniques.
-    Étant donné les paramètres spécifiés ci-dessous :
-    - Résumé du commentaire délimité par des backticks (`{summary}`)
-    - Notre texte de réponse délimité par des triples guillemets (\"\"\"{response_text}\"\"\")
-    - Traduisez l'objet de l'e-mail délimité par des chevrons ({email_subject}) en langue "{language}"
-    Écrivez un e-mail complet en réponse au commentaire du client en utilisant la langue "{language}".
+        response_text = "Thank you for your feedback! We're always looking to improve and your insights are valuable."
+    prompt= f"""
+    Asuming that you provide customer support for an electronic product company.
+    Given the specified parameters below:
+    - Comment summary enclosed in backticks (`{summary}`)
+    - Our response text enclosed in triple quotes (\"\"\"{response_text}\"\"\")
+    - Translate the Email subject enclosed in angle brackets ({email_subject}) to language \"{language}\"
+    Write a complete email responding to the customer's comment using the language \"{language}\". 
     """
-    response = get_completion(prompt)
+    response=get_completion(prompt)
     return response
 
 
