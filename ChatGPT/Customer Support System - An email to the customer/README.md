@@ -96,7 +96,12 @@ To run this application, follow these implementation steps:
 ## Test (Output)
 
 * Open http://127.0.0.1:5000 to see the result
+* Choose the desired language from the dropdown menu.
+* View the generated customer comment in the "Question" container.
+* Observe the corresponding email response in the "Answer" container.
+* Click the "Process" button to initiate the processing of the customer comment.
 
+The application will display the generated email response based on the selected language and customer comment.
 
 Test Case 1: English to English
 
