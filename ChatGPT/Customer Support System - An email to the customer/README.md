@@ -67,7 +67,7 @@ The system is designed as a Flask web application with a straightforward user in
     
 We will test the following:
 
-<img src="img/table.png">
+<img src="https://github.com/TejasriVaitla/Machine-Learning/assets/128747986/065fd3ed-888f-446b-acfe-e179174f4ad4">
 
 ## Implementation
 
@@ -92,9 +92,21 @@ To run this application, follow these implementation steps:
    ```bash
    python3 app.py
    ```
-   or
-   ```
-   flask run
-   ```
 
 ## Test (Output)
+
+Test Case 1: English to English
+
+![image](https://github.com/TejasriVaitla/Machine-Learning/assets/128747986/276ff739-dfcd-47d6-ab2b-552926cd27dc)
+
+Test Case 2: English to Polish(Non-English)
+
+![image](https://github.com/TejasriVaitla/Machine-Learning/assets/128747986/2d66a003-f150-44ea-8e82-a32cee6173b7)
+
+Test Case 3: Non-English(French) to English
+
+![image](https://github.com/TejasriVaitla/Machine-Learning/assets/128747986/9c17cb1d-f574-4874-a903-ff41f4ea7265)
+
+Test Case 4: Non-English(French) to Non-English(French)
+
+![image](https://github.com/TejasriVaitla/Machine-Learning/assets/128747986/7443d960-ab86-4d2a-854c-d4fa4398ca6a)
