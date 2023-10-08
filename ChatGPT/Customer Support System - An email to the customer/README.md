@@ -114,3 +114,7 @@ Test Case 4: Non-English(French) to Non-English(French)
 
 ![image](https://github.com/TejasriVaitla/Machine-Learning/assets/128747986/172c217d-6b27-425c-891f-e4f041e0d654)
 
+
+### Customer Support System: An email to the customer (Google Slides)
+
+[Customer Support System(Slides)](https://docs.google.com/presentation/d/1-9xlAwnhfQLiNNr-Ek1cnjSYo5KUit71K7PJrcImTtc/edit?usp=sharing)
