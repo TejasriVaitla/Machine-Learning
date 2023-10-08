@@ -95,6 +95,9 @@ To run this application, follow these implementation steps:
 
 ## Test (Output)
 
+* Open http://127.0.0.1:5000 to see the result
+
+
 Test Case 1: English to English
 
 ![image](https://github.com/TejasriVaitla/Machine-Learning/assets/128747986/276ff739-dfcd-47d6-ab2b-552926cd27dc)
