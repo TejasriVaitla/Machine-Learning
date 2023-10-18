@@ -141,3 +141,6 @@ This project aims to implement several key steps for improving the customer supp
 
 - eval_vs_ideal
 
+### Customer Support System: Moderation, Classification, Checkout, and Evaluation (Google Slides)
+
+[Customer Support System(Slides)](https://docs.google.com/presentation/d/1JKsVeGV8hz-c2_0nyu4J5lwmsj2fcVWU7msKE0737e4/edit?usp=sharing)
