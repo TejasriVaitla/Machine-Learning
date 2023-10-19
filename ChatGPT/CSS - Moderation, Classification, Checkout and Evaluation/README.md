@@ -8,7 +8,31 @@ If possible, complete **Customer Support System: An email to the customer.**
 
 This project aims to implement several key steps for improving the customer support experience, including moderation, classification, answering user questions, checking output quality, and conducting evaluations.
 
-## Process for Project Implementation
+## Implementation
+
+To run these scripts, follow these steps:
+
+1. Create a virtual environment:
+   ```bash
+   python3 -m venv venv
+   ```
+
+2. Activate the virtual environment:
+   ```bash
+   . venv/bin/activate
+   ```
+
+3. Install the required packages:
+   ```bash
+   pip install python-dotenv openai utils
+   ```
+
+4. Run the Python scripts with the following commands, replacing `<filename.py>` with the actual filename of the script you want to execute:
+
+   ```bash
+   python3 <filename.py>
+   ```
+**Note:** Ensure that you have set up your OpenAI API key and environment variables as needed for the scripts to function correctly.
 
 ### Step 1: Checking Input - Input Moderation
 
