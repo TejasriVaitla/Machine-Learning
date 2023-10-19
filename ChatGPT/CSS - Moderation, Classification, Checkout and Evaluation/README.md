@@ -54,6 +54,9 @@ This project aims to implement several key steps for improving the customer supp
 
 - Implement a mechanism for preventing prompt injection.
 
+![image](https://github.com/TejasriVaitla/Machine-Learning/assets/128747986/0fdc2377-a580-49b2-be63-76deff711af2)
+
+
 ### Step 2: Classification of Service Requests
 
 **Input:**
@@ -64,6 +67,9 @@ This project aims to implement several key steps for improving the customer supp
 
 - Response showing the User Message's classification.
 
+![image](https://github.com/TejasriVaitla/Machine-Learning/assets/128747986/824f6399-9e3a-452c-bfde-c0d4e8c100d9)
+
+
 ### Step 3: Answering User Questions Using Chain of Thought Reasoning
 
 **Input:**
@@ -73,6 +79,9 @@ This project aims to implement several key steps for improving the customer supp
 **Output:**
 
 - Use Chain of Thought Reasoning to provide an answer to the user's question.
+
+![image](https://github.com/TejasriVaitla/Machine-Learning/assets/128747986/9059e43b-a14b-4196-b5fc-face2aa3caa7)
+
 
 ### Step 4: Check Output
 
@@ -96,6 +105,9 @@ This project aims to implement several key steps for improving the customer supp
 
 - Use Check Output's Model Self-Evaluation technique to check if the response is not factually based.
 
+![image](https://github.com/TejasriVaitla/Machine-Learning/assets/128747986/682b62f8-a873-4247-a3cb-4dbf6940612d)
+
+
 ### Step 5: Evaluation Part I - Evaluate Test Cases by Comparing Customer Messages with Ideal Answers
 
 **Input:**
@@ -105,6 +117,11 @@ This project aims to implement several key steps for improving the customer supp
 **Output:**
 
 - Run evaluation on all test cases and calculate the fraction of cases that are correct.
+
+![image](https://github.com/TejasriVaitla/Machine-Learning/assets/128747986/c0273db6-389e-4fd8-a7e5-cb1c93208f8e)
+
+![image](https://github.com/TejasriVaitla/Machine-Learning/assets/128747986/7b2abc85-7bc0-4553-ae25-74e2a89bf364)
+
 
 ### Step 6: Evaluation Part II
 
@@ -140,6 +157,11 @@ This project aims to implement several key steps for improving the customer supp
 **Output:**
 
 - eval_vs_ideal
+
+![image](https://github.com/TejasriVaitla/Machine-Learning/assets/128747986/1b78fa28-c444-4a64-95fd-82601945c3dc)
+
+![image](https://github.com/TejasriVaitla/Machine-Learning/assets/128747986/05498e66-6f24-46ee-a8b1-63c123041221)
+
 
 ### Customer Support System: Moderation, Classification, Checkout, and Evaluation (Google Slides)
 
