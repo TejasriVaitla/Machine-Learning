@@ -78,9 +78,9 @@ To run the Chatbot project on Ubuntu, follow these steps:
    pip install -r requirements.txt
    ```
 
-4. Start the application by running `app.py`:
+4. Start the application by running `chat.py`:
    ```
-   python3 app.py
+   python3 chat.py
    ```
 ![image](https://github.com/TejasriVaitla/Machine-Learning/assets/128747986/03d4714b-2624-4273-826d-bd99b9171b6c)
    
