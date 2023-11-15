@@ -6,23 +6,23 @@ This project integrates cutting-edge technologies in audio processing, speech re
 ## Implementation
 
 ### 1. Create a Python Virtual Environment:
-```bash
+```
 python3 -m venv venv
 . venv/bin/activate
 ```
 
 ### 2. Install Dependencies:
-    ```
-    sudo apt update && sudo apt install ffmpeg
-    pip install -r requirements.txt
-    ```
+```
+sudo apt update && sudo apt install ffmpeg
+pip install -r requirements.txt
+```
 
-### 3. Run the Script:
-    ```bash
-    python3 app.py
-    ```
+### 3. Run the application:
+```
+python3 app.py
+```
 
-     - The script will prompt you to enter a wake word. The default wake word is "hey computer".
+    - The script will prompt you to enter a wake word. The default wake word is "hey computer".
     - Once the wake word is set, the script will begin listening for your voice commands.
     - To stop the script, press `Ctrl + C`.
 
