@@ -7,3 +7,5 @@ gTTS
 click
 pyaudio
 python-dotenv
+mutagen.mp3
+simpleaudio
