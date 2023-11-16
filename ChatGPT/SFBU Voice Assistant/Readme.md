@@ -22,3 +22,9 @@ pip install -r requirements.txt
 python3 app.py
 ```
 
+## Output
+
+![image](https://github.com/TejasriVaitla/Machine-Learning/assets/128747986/cbe5e026-ab65-4167-a0d4-fba431039775)
+
+## SFBU Voice Assistant [Google Slides]
+[SFBU Voice Assistant](https://docs.google.com/presentation/d/1nhKD9ygbf0K57L4J-gPMXOi8rW4GFE4JDqTOEFhrtac/edit?usp=sharing)
