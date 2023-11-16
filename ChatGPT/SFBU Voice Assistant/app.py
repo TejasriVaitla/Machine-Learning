@@ -26,22 +26,7 @@ import os
 import certifi
 os.environ['SSL_CERT_FILE'] = certifi.where()
 running = True
-                              
-def init_api():
-    try:
-        with open("/Users/maryamz/Desktop/PROJECTS/Try/.env", "r") as env:  # Make sure this path is correct
-            for line in env:
-                if line.strip() and not line.startswith("#"):
-                    key, value = line.strip().split("=", 1)
-                    os.environ[key] = value.replace('"', '')  # Removing quotes if present
-    except IOError:
-        print("Could not open .env file.")
-        exit(1)
-    
-    openai.api_key = os.environ.get("OPENAI_API_KEY")
-    if not openai.api_key:
-        print("No API key provided.")
-        exit(1)
+
 
 @click.command()
 @click.option("--model", default="base", help="Model to use", type=click.Choice(["tiny", "base", "small", "medium", "large"]))
@@ -61,7 +46,7 @@ def main(model, english, energy, pause, dynamic_energy, wake_word, verbose):
     
     threading.Thread(target=record_audio, args=(audio_queue, energy, pause, dynamic_energy,)).start()
     threading.Thread(target=transcribe_forever, args=(audio_queue, result_queue, audio_model, english, wake_word, verbose,)).start()
-    vectordb, split_documents = extract_text_from_pdf("./documents/SFBU.pdf")
+    vectordb, split_documents = extract_text_from_pdf("SFBU2023Catalog.pdf")
     # print(f"PDF Content: {pdf_content[:500]}")
     threading.Thread(target=reply, args=(result_queue, verbose, vectordb, split_documents)).start()
 
@@ -168,11 +153,11 @@ def reply(result_queue, verbose, vectordb, split_documents):
 
             # Formulate the prompt with additional context or instructions
             relevant_text = query_vectordb(vectordb, question, split_documents)
-            combined_input = f"Context from the document: {relevant_text}\nUser's question: {question}"
+            combined_input = f"Context from the document: {relevant_text}\nInput: {question}"
             prompt = (
                 "Given the following document context and a user's question, provide a detailed and informative answer.\n"
                 f"{combined_input}\n"
-                "AI's detailed response:"
+                "Output:"
             )
             # OpenAI API call
             response = openai.Completion.create(
