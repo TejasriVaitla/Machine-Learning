@@ -28,3 +28,8 @@ python3 app.py
 
 ## Output
 
+![image](https://github.com/TejasriVaitla/Machine-Learning/assets/128747986/f3239ce5-d1a3-441a-bba3-b6f76eeba08a)
+
+
+## AI-based Alexa[Google Slides]
+[AI-based Alexa](https://docs.google.com/presentation/d/1rSFCNxCkICeQbQzhO0X5FOCCMFLFAJpA0xmtG0sU6fg/edit?usp=sharing)
