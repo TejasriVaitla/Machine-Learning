@@ -2,7 +2,13 @@
 
 ## Introduction
 
-This project is focused on implementing an advanced search and reranking system. It leverages the capabilities of Cohere and Weaviate to perform dense retrieval and rerank search results, enhancing the relevance and accuracy of information retrieval. This system can be applied in various domains where precise and context-aware search results are essential.
+The "ReRank" project is designed to enhance information retrieval systems through the application of Dense Retrieval and ReRanking techniques. The primary goal is to improve the accuracy and relevance of search results in response to user queries. Two key technologies, Cohere and Weaviate, are leveraged to achieve this objective.
+
+Cohere Integration:
+Cohere, an advanced natural language processing platform, is integrated into the project using its API. Cohere's capabilities, such as Dense Retrieval and ReRanking models, play a crucial role in refining the search results and providing users with more contextually relevant information.
+
+Weaviate Integration:
+Weaviate, a vector search engine, is utilized for Dense Retrieval. It offers an efficient mechanism for retrieving documents based on their semantic similarity to the user's query. The combination of Cohere and Weaviate contributes to a powerful and versatile information retrieval system.
 
 ## Design
 
