@@ -1,0 +1,3 @@
+COHERE_API_KEY = QG31s7qxtpu0puA1hcH1ti8XAIj36MDWEUC4CEkw
+WEAVIATE_API_KEY = "76320a90-53d8-42bc-b41d-678647c6672e"
+WEAVIATE_API_URL = "https://cohere-demo.weaviate.network/"
