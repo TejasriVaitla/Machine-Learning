@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The AI Article Assistant is a Python-based tool designed to facilitate the process of finding relevant information from a large text corpus and generating concise answers to user queries. This tool leverages advanced natural language processing techniques and is particularly useful for extracting insights from extensive articles or documents.
+The "Generating Answers" project aims to develop a system that can intelligently generate answers to user queries based on a given text archive. The project involves several key steps, including preprocessing input texts, generating embeddings, building a search index, searching articles, and finally, generating answers. The ultimate goal is to create an efficient and accurate question-answering system that can provide relevant responses to user queries.
 
 
 ## Design
@@ -44,4 +44,4 @@ To run the AI Article Assistant, follow these steps:
 ![image](https://github.com/TejasriVaitla/Machine-Learning/assets/128747986/cd7b82bc-167f-4f6d-a9f3-a5347218fa39)
 
 
-[Google Slides(AI Article Assitant)](https://docs.google.com/presentation/d/1-uLn_G1VYqCMl8tqd_qax9Dz33pGBzqe3xXBD_A9eWI/edit?usp=sharing)
+[Google Slides(Generating Answers)](https://docs.google.com/presentation/d/1-uLn_G1VYqCMl8tqd_qax9Dz33pGBzqe3xXBD_A9eWI/edit?usp=sharing)
