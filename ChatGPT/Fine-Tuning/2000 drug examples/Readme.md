@@ -35,7 +35,7 @@ To get the system up and running, follow these steps:
 
 ## Output
 
-Please find the output of the AI Article Assistant in output.txt
+Please find the output of the model is in output.txt
 
 ![image](https://github.com/TejasriVaitla/Machine-Learning/assets/128747986/5e47f604-6c75-4da4-b259-570f238942ff)
 
